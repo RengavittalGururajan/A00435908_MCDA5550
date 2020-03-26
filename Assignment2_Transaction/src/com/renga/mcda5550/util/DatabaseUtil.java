@@ -6,17 +6,19 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class DatabaseUtil {
-	private static final String url="jdbc:mysql://lnx.cs.smu.ca:3333/mcda5550";
+	private static final String url="jdbc:mysql://lnx.cs.smu.ca:3333/r_gururajan";
 	private static final String driver="com.mysql.jdbc.Driver";
-	private static final String username="u37";
-	private static final String password="kenyaSLOWLY95";
+	private static final String username="r_gururajan";
+	private static final String password="A00435908";
 	
 	//----------------------------------------------------------------------------------------
 	public static Connection getConnection(){ // for establishing connection
 		Connection con = null;
 		try {
 			Class.forName(driver);
-			con = DriverManager.getConnection(url, username, password);
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3333/r_gururajan?" + "user=r_gururajan&password=A00435908"
+                    + "&useSSL=false&allowPublicKeyRetrieval=true"
+                    + "&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");
 			//con = DriverManager.getConnection("jdbc:mysql://localhost/treez?" 				+ "user=root&password=tutorial" // Creds
 			//		+ "&useSSL=false" // b/c localhost
 				//	+ "&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"); // timezone
