@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">workshop</string>
+    <string name="linear_layout_horizontal">Linear Layout Horizontal</string>
+    <string name="linear_layout_vertical">Linear Layout Horizontal</string>
+    <string name="title_layouts">Layouts</string>
+    <string name="title_login">Login</string>
+    <string name="title_fun">Fun</string>
+    <string name="title_confirmation">Books List</string>
+</resources>
+
